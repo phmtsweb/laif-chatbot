@@ -1,0 +1,118 @@
+version: "3.1"
+
+rules:
+
+- rule: Dizer olá sempre que o usuário cumprimentar
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Dizer adeus sempre que o usuário se despedir
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Responder ao desafio "você é um bot?"
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Responder institucional
+  steps:
+  - intent: institucional
+  - action: utter_institucional
+
+- rule: Responder ações e programas
+  steps:
+  - intent: actions_programs
+  - action: utter_actions_programs
+
+- rule: Responder participação social
+  steps:
+  - intent: social_participation
+  - action: utter_social_participation
+
+- rule: Responder estrutura organizacional
+  steps:
+  - intent: organization_structure
+  - action: utter_organization_structure
+
+- rule: Responder competências
+  steps:
+  - intent: compentencies
+  - action: utter_competencies
+
+- rule: Responder base jurídica
+  steps:
+  - intent: legal_basis
+  - action: utter_legal_basis 
+
+- rule: Responder cargos e ocupantes
+  steps:
+  - intent: positions_and_occupants  # <-- CORREÇÃO PRINCIPAL
+  - action: utter_positions_and_occupants 
+
+- rule: Responder perfil profissional
+  steps:
+  - intent: professional_profile
+  - action: utter_professional_profile
+
+- rule: Responder horário de funcionamento
+  steps:
+  - intent: opening_hours
+  - action: utter_opening_hours 
+
+- rule: Responder atos normativos
+  steps:
+  - intent: normative_acts
+  - action: utter_normative_acts
+
+- rule: Responder programas e projetos
+  steps:
+  - intent: programs_projects
+  - action: utter_programs_projects 
+
+- rule: Responder serviços
+  steps:
+  - intent: services
+  - action: utter_services  
+
+- rule: Responder recursos financeiros
+  steps:
+  - intent: financial_resources
+  - action: utter_financial_resources 
+
+- rule: Responder governança
+  steps:
+  - intent: governance
+  - action: utter_governance
+  
+- rule: Responder ouvidoria
+  steps:
+  - intent: ombudsman
+  - action: utter_ombudsman
+  
+- rule: Responder audiências e consultas públicas
+  steps:
+  - intent: audiences_and_public_consultations
+  - action: utter_audiences_and_public_consultations
+  
+- rule: Responder conselhos e colegiados
+  steps:
+  - intent: councils_and_collegiate_bodies
+  - action: utter_councils_and_collegiate_bodies
+  
+- rule: Responder conferências
+  steps:
+  - intent: conferences
+  - action: utter_conferences
+  
+- rule: Responder editais de chamamento público
+  steps:
+  - intent: public_calls
+  - action: utter_public_calls
+
+- rule: Responder outras ações
+  steps:
+  - intent: other_actions
+  - action: utter_other_actions

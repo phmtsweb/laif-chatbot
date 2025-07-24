@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rasa Webchat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .rw-conversation-container .rw-replies {
+      flex-direction: column;
+    }
+
+    .rw-conversation-container .rw-reply {
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="webchat"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"></script>
+  <script>
+    WebChat.default({
+      selector: "#webchat",
+      initPayload: "/greet",
+      customData: { "language": "pt" },
+      socketUrl: "http://localhost:5005",
+      socketPath: "/socket.io/",
+      title: "LAIF",
+      subtitle: "Assistente Virtual",
+      profileAvatar: "laif.png",
+      inputTextFieldHint: "Digite sua mensagem...",
+      mainColor: "#00420c",
+      userBackgroundColor: "#00420c",
+      params: {
+        storage: "session",
+      }
+    });
+  </script>
+</body>
+
+</html>

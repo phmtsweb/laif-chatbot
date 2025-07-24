@@ -1,0 +1,147 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - institucional
+  - actions_programs
+  - social_participation
+  - organization_structure
+  - compentencies
+  - legal_basis
+  - positions_and_occupants
+  - professional_profile
+  - opening_hours
+  - normative_acts
+  - programs_projects
+  - services
+  - financial_resources
+  - governance
+  - ombudsman
+  - audiences_and_public_consultations
+  - councils_and_collegiate_bodies
+  - conferences
+  - public_calls
+  - other_actions
+
+responses:
+  utter_greet:
+    - text: "Olá! Meu nome é Laif, sou a assistente virtual e vou auxiliar você a encontrar a informação desejada.\nBasta clicar na informação desejada:"
+      buttons:
+        - title: "1. Institucional"
+          payload: "/institucional"
+        - title: "2. Ações e Programas"
+          payload: "/actions_programs"
+        - title: "3. Participação Social"
+          payload: "/social_participation"
+  utter_goodbye:
+    - text: "Até mais!"
+  utter_iamabot:
+    - text: "Eu sou um bot, criado com Rasa."
+  utter_institucional:
+    - text: |
+        Aqui estão as informações institucionais.
+        Link para o site: https://ifsertaope.edu.br/acesso-a-informacao/institucional/
+      buttons:
+        - title: "1.1 Estrutura Organizacional"
+          payload: "/organization_structure"
+        - title: "1.2 Competências"
+          payload: "/compentencies"
+        - title: "1.3 Base Jurídica"
+          payload: "/legal_basis"
+        - title: "1.4 Cargos e Ocupantes"
+          payload: "/positions_and_occupants"  # <-- CORRIGIDO
+        - title: "1.5 Perfil Profissional"
+          payload: "/professional_profile"
+        - title: "1.6 Horário de Funcionamento"
+          payload: "/opening_hours"
+        - title: "1.7 Atos Normativos"
+          payload: "/normative_acts"
+  utter_actions_programs:
+    - text: | 
+        Aqui estão as informações sobre ações e programas.
+        Link para o site: https://ifsertaope.edu.br/acesso-a-informacao/acoes-e-programas/
+      buttons:
+        - title: "2.1 Programas, projetos, ações, obras e atividades"
+          payload: "/programs_projects"
+        - title: "2.2 Carta de Serviços"
+          payload: "/services"
+        - title: "2.3 Concessão de recursos financeiros ou renúncia de receitas"
+          payload: "/financial_resources"
+        - title: "2.4 Governança"
+          payload: "/governance"
+  utter_social_participation:
+    - text: "Aqui estão as informações sobre participação social.\nLink para o site: https://ifsertaope.edu.br/acesso-a-informacao/participacao-social/"
+      buttons:
+        - title: "3.1 Ouvidoria"
+          payload: "/ombudsman"
+        - title: "3.2 Audiências e consultas públicas"
+          payload: "/audiences_and_public_consultations"
+        - title: "3.3 Conselhos e órgãos colegiados"
+          payload: "/councils_and_collegiate_bodies"
+        - title: "3.4 Conferências"
+          payload: "/conferences"
+        - title: "3.5 Editais de chamamento público"
+          payload: "/public_calls"
+        - title: "3.6 Outras ações"
+          payload: "/other_actions"
+  utter_organization_structure:
+    - text: |
+        Aqui estão os links para os organogramas:
+        - [Organograma da Reitoria](https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-Reitoria-Res.-15-de-2024-FG04-e-FG05.pdf)
+        - [Organograma Campus Petrolina](https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-CP-atualizacao-05-08-2024-Res.-16-de-2024.pdf)
+        - [Organograma Campus Petrolina Zona Rural](https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-CPZR-atualizacao-05-08-2024-Res.-15-2024.pdf)
+        - [Organograma Campus Serra Talhada](https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-Serra-Talhada-atualizacao-15-08-2024-Res.-15-de-2024.pdf)
+        - [Organograma Campus Salgueiro](https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-dos-Campi-Expansao-atualizacao-15-08-2024-Res.-15-de-2024.pdf)
+        - [Organograma Campus Ouricuri](https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-dos-Campi-Expansao-atualizacao-15-08-2024-Res.-15-de-2024.pdf)
+        - [Organograma Campus Santa Maria da Boa Vista](https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-dos-Campi-Expansao-atualizacao-15-08-2024-Res.-15-de-2024.pdf)
+        - [Organograma Campus Floresta](https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-dos-Campi-Expansao-atualizacao-15-08-2024-Res.-15-de-2024.pdf)
+  utter_competencies:
+    - text: |
+        As informações sobre competências da Reitoria podem ser encontradas em: https://ifsertaope.edu.br/acesso-a-informacao/institucional/
+        Para os campi, infelizmente, a informação não está disponível no momento.
+  utter_legal_basis:
+    - text: | 
+        As informações sobre a base jurídica da instituição estão detalhadas em: https://ifsertaope.edu.br/acesso-a-informacao/institucional/
+        Para os campi, a informação não está disponível no momento.
+  utter_positions_and_occupants:
+    - text: | 
+        As informações gerais sobre cargos e ocupantes estão disponíveis em: https://ifsertaope.edu.br/acesso-a-informacao/institucional/
+        Para a reitoria e os campi, as informações não estão disponíveis.
+  utter_professional_profile:
+    - text: "As informações não estão disponíveis no momento."
+  utter_opening_hours:
+    - text: |
+        O horário de funcionamento da Reitoria está disponível em: https://ifsertaope.edu.br/acesso-a-informacao/institucional/
+        Para os campi, as informações não estão disponíveis no momento.
+  utter_normative_acts:
+    - text: | 
+        Os atos normativos, como resoluções e portarias, estão disponíveis em: https://ifsertaope.edu.br/acesso-a-informacao/institucional/
+        Para os campi, as informações não estão disponíveis.
+  utter_programs_projects:
+    - text: "As informações não estão disponíveis no momento."
+  utter_services:
+    - text: |
+        A carta de serviços da reitoria está disponivel em: https://www.gov.br/pt-br/orgaos/instituto-federal-de-educacao-ciencia-e-tecnologia-do-sertao-pernambucano
+        Para os campi, as informações não estão disponíveis.
+  utter_financial_resources:
+    - text: "As informações não estão disponíveis no momento."
+  utter_governance:
+    - text: "Nossa política de governança está disponível em: https://ifsertaope.edu.br/acesso-a-informacao/acoes-e-programas/"
+  utter_ombudsman:
+    - text: "Você pode entrar em contato com a Ouvidoria através do nosso portal: https://ifsertaope.edu.br/ouvidoria/"
+  utter_audiences_and_public_consultations:
+    - text: "As informações não estão disponíveis no momento."
+  utter_councils_and_collegiate_bodies:
+    - text: "As informações não estão disponíveis no momento."
+  utter_conferences:
+    - text: "As informações não estão disponíveis no momento."
+  utter_public_calls:
+    - text: "Todos os editais de chamamento público estão centralizados em nossa página de editais: https://ifsertaope.edu.br/editais/"
+  utter_other_actions:
+    - text: "Outras ações de interação com a sociedade podem ser acompanhadas em: https://ifsertaope.edu.br/acesso-a-informacao/participacao-social/"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

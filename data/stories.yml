@@ -1,0 +1,46 @@
+version: "3.1"
+
+stories:
+- story: Caminho feliz - Usuário navega pelo menu Institucional
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: institucional
+  - action: utter_institucional
+  - intent: organization_structure
+  - action: utter_organization_structure
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Caminho feliz - Usuário navega pelo menu Ações e Programas
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: actions_programs
+  - action: utter_actions_programs
+  - intent: governance
+  - action: utter_governance
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Caminho com interrupção - Usuário pergunta quem é o bot no meio do fluxo
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: social_participation
+  - action: utter_social_participation
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: ombudsman
+  - action: utter_ombudsman
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Navegação curta para um tópico específico
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: legal_basis
+  - action: utter_legal_basis
+  - intent: goodbye
+  - action: utter_goodbye

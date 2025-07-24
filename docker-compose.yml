@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  rasa:
+    image: rasa/rasa:3.6.15-full
+    container_name: rasa_server
+    user: root
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./:/app
+    command: >
+      run
+      --model /app/models
+      --enable-api
+      --cors "*"
+      --debug
+      --credentials /app/credentials.yml
+
+  web:
+    image: nginx:alpine
+    container_name: web_server
+    ports:
+      - "3000:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./laif.png:/usr/share/nginx/html/laif.png:ro
+    depends_on:
+      - rasa

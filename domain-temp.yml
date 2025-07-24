@@ -1,0 +1,343 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - institucional
+  - actions_programs
+  - social_participation
+  - organization_structure
+  - compentencies
+  - legal_basis
+  - positions_and_occupants
+  - professional_profile
+  - opening_hours
+  - normative_acts
+  - programs_projects
+  - services
+  - financial_resources
+  - governance
+  - ombudsman
+  - audiences_and_public_consultations
+  - councils_and_collegiate_bodies
+  - conferences
+  - public_calls
+  - other_actions
+responses:
+  utter_greet:
+    - text: "Olá! Meu nome é Laif, sou a assistente virtual e vou auxiliar você a encontrar a informação desejada.\nBasta clicar na informação desejada:"
+      buttons:
+        - title: "1. Instucional"
+          payload: "/institucional"
+        - title: "2. Ações e Programas"
+          payload: "/actions_programs"
+        - title: "3. Participação Social"
+          payload: "/social_participation"
+  utter_goodbye:
+    - text: "Até mais!"
+  utter_iamabot:
+    - text: "Eu sou um bot, criado com Rasa."
+  utter_institucional:
+    - text: "Aqui estão as informações institucionais.\nLink para o site: https://ifsertaope.edu.br/acesso-a-informacao/institucional/"
+      buttons:
+        - title: "1.1 Estrutura Organizacional"
+          payload: "/organization_structure"
+        - title: "1.2 Competências"
+          payload: "/compentencies"
+        - title: "1.3 Base Jurídica"
+          payload: "/legal_basis"
+        - title: "1.4 Cargos e Ocupantes"
+          payload: "/rectory_organization_chart"
+        - title: "1.5 Perfil Profissional"
+          payload: "/professional_profile"
+        - title: "1.6 Horário de Funcionamento"
+          payload: "/opening_hours"
+        - title: "1.7 Atos Normativos"
+          payload: "/normative_acts"
+  utter_actions_programs:
+    - text: "Aqui estão as informações sobre ações e programas.\nLink para o site: https://ifsertaope.edu.br/acesso-a-informacao/acoes-e-programas/"
+      buttons:
+        - title: "2.1 Programas, projetos, ações, obras e atividades"
+          payload: "/programs_projects"
+        - title: "2.2 Carta de Serviços"
+          payload: "/services"
+        - title: "2.3 Concessão de recursos financeiros ou renúncia de receitas"
+          payload: "/financial_resources"
+        - title: "2.4 Governança"
+          payload: "/governance"
+  utter_social_participation:
+    - text: "Aqui estão as informações sobre participação social.\nLink para o site: https://ifsertaope.edu.br/acesso-a-informacao/participacao-social/"
+      buttons:
+        - title: "3.1 Ouvidoria"
+          payload: "/ombudsman"
+        - title: "3.2 Audiências e consultas públicas"
+          payload: "/audiences_and_public_consultations"
+        - title: "3.3 Conselhos e órgãos colegiados"
+          payload: "/councils_and_collegiate_bodies"
+        - title: "3.4 Conferências"
+          payload: "/conferences"
+        - title: "3.5 Editais de chamamento público"
+          payload: "/public_calls"
+        - title: "3.6 Outras ações"
+          payload: "/other_actions"
+  utter_organization_structure:
+    - text: "Aqui estão as informações sobre a estrutura organizacional."
+      buttons:
+        - title: "1.1.1 Organograma da Reitoria"
+          payload: "Link para download: https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-Reitoria-Res.-15-de-2024-FG04-e-FG05.pdf"
+        - title: "1.1.2 Organograma Campus Petrolina"
+          payload: "Link para download: https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-CP-atualizacao-05-08-2024-Res.-16-de-2024.pdf"
+        - title: "1.1.3 Organograma Campus Petrolina Zona Rural"
+          payload: "Link para download: https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-CPZR-atualizacao-05-08-2024-Res.-15-2024.pdf"
+        - title: "1.1.4 Organograma Campus Serra Talhada"
+          payload: "Link para download: https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-Serra-Talhada-atualizacao-15-08-2024-Res.-15-de-2024.pdf"
+        - title: "1.1.5 Organograma Campus Salgueiro"
+          payload: "Link para download: https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-dos-Campi-Expansao-atualizacao-15-08-2024-Res.-15-de-2024.pdf"
+        - title: "1.1.6 Organograma Campus Ouricuri"
+          payload: "Link para download: https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-dos-Campi-Expansao-atualizacao-15-08-2024-Res.-15-de-2024.pdf"
+        - title: "1.1.7 Organograma Campus Santa Maria da Boa Vista"
+          payload: "Link para download: https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-dos-Campi-Expansao-atualizacao-15-08-2024-Res.-15-de-2024.pdf"
+        - title: "1.1.8 Organograma Campus Floresta"
+          payload: "Link para download: https://ifsertaope.edu.br/wp-content/uploads/2024/09/Organograma-dos-Campi-Expansao-atualizacao-15-08-2024-Res.-15-de-2024.pdf"
+  utter_competencies:
+    - text: "Aqui estão as informações sobre as competências."
+      buttons:
+        - title: "1.2.1 Reitoria"
+          payload: "Link para mais informações: https://ifsertaope.edu.br/acesso-a-informacao/institucional/"
+        - title: "1.2.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.2.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.2.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.2.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.2.6 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.2.7 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.2.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_legal_basis:
+    - text: "Aqui estão as informações sobre a base jurídica.\nPara mais informações, acesse: https://ifsertaope.edu.br/acesso-a-informacao/institucional/"
+      buttons:
+        - title: "1.3.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.3.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.3.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.3.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.3.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.3.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.3.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.3.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_positions_and_occupants:
+    - text: "Aqui estão as informações sobre cargos e ocupantes.\nPara mais informações, acesse: https://ifsertaope.edu.br/acesso-a-informacao/institucional/"
+      buttons:
+        - title: "1.4.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.4.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.4.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.4.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.4.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.4.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.4.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.4.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_professional_profile:
+    - text: "Aqui estão as informações sobre o perfil profissional."
+      buttons:
+        - title: "1.5.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.5.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.5.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.5.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.5.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.5.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.5.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.5.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_opening_hours:
+    - text: "Aqui estão as informações sobre o horário de funcionamento.\nPara mais informações, acesse: https://ifsertaope.edu.br/acesso-a-informacao/institucional/"
+      buttons:
+        - title: "1.6.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.6.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.6.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.6.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.6.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.6.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.6.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.6.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_normative_acts:
+    - text: "Aqui estão as informações sobre atos normativos.\nPara mais informações, acesse: https://ifsertaope.edu.br/acesso-a-informacao/institucional/"
+      buttons:
+        - title: "1.7.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.7.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.7.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.7.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.7.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.7.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.7.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "1.7.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_programs_projects:
+    - text: "Aqui estão as informações sobre programas e projetos."
+      buttons:
+        - title: "2.1.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.1.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.1.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.1.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.1.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.1.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.1.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.1.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_services:
+    - text: "Aqui estão as informações sobre a carta de serviços oferecidos."
+      buttons:
+        - title: "2.2.1 Reitoria"
+          payload: "Link para mais informações: https://www.gov.br/pt-br/orgaos/instituto-federal-de-educacao-ciencia-e-tecnologia-do-sertao-pernambucano"
+        - title: "2.2.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.2.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.2.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.2.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.2.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.2.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.2.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_financial_resources:
+    - text: "Aqui estão as informações sobre concessões de recursos financeiros ou renúncia de receitas."
+      buttons:
+        - title: "2.3.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.3.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.3.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.3.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.3.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.3.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.3.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "2.3.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_governance:
+    - text: "Aqui estão as informações sobre governança.\nLink para mais informações: https://ifsertaope.edu.br/acesso-a-informacao/acoes-e-programas/"
+  utter_ombudsman:
+    - text: "Aqui estão as informações sobre a ouvidoria.\nLink para mais informações: https://ifsertaope.edu.br/ouvidoria/"
+  utter_audiences_and_public_consultations:
+    - text: "Aqui estão as informações sobre audiências e consultas públicas."
+      buttons:
+        - title: "3.2.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.2.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.2.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.2.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.2.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.2.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.2.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.2.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_councils_and_collegiate_bodies:
+    - text: "Aqui estão as informações sobre conselhos e órgãos colegiados."
+      buttons:
+        - title: "3.3.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.3.2 Campus Petrolina"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.3.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.3.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.3.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.3.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.3.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.3.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_conferences:
+    - text: "Aqui estão as informações sobre conferências."
+      buttons:
+        - title: "3.4.1 Reitoria"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.4.2 Campus Petrolina" 
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.4.3 Campus Petrolina Zona Rural"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.4.4 Campus Salgueiro"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.4.5 Campus Serra Talhada"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.4.6 Campus Ouricuri"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.4.7 Campus Floresta"
+          payload: "Infelizmente, não há informações disponíveis."
+        - title: "3.4.8 Campus Santa Maria da Boa Vista"
+          payload: "Infelizmente, não há informações disponíveis."
+  utter_public_calls:
+    - text: "Aqui estão as informações sobre editais de chamamento público.\nLink para mais informações: https://ifsertaope.edu.br/editais/"
+  utter_other_actions:
+    - text: "Aqui estão as informações sobre outras ações.\nLink para mais informações: https://ifsertaope.edu.br/acesso-a-informacao/participacao-social/"
+      
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

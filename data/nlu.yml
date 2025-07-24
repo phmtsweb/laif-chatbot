@@ -1,0 +1,162 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - oi
+      - olá
+      - eae
+      - bom dia
+      - boa tarde
+      - boa noite
+      - e aí
+      - iai
+      - ei
+
+
+  - intent: goodbye
+    examples: |
+      - tchau
+      - xau
+      - até logo
+      - adeus
+      - fui
+
+  - intent: bot_challenge
+    examples: |
+      - você é um robô?
+      - você é um bot?
+      - quem é você?
+
+  - intent: institucional
+    examples: |
+      - institucional
+      - informações institucionais
+      - sobre a empresa
+  
+  - intent: actions_programs
+    examples: |
+      - ações e programas
+      - programas e ações
+      - ações
+      - ação
+      - programas
+      - programa
+
+  - intent: social_participation
+    examples: |
+      - participação social
+      - informações sobre participação social
+      - participação
+      - social
+      - socialização
+  - intent: organization_structure
+    examples: |
+      - estrutura organizacional
+      - organização
+      - estrutura
+      - organograma
+  - intent: compentencies
+    examples: |
+      - competências
+      - atribuições
+      - funções
+      - responsabilidades
+  - intent: legal_basis
+    examples: |
+      - base jurídica
+      - legislação
+      - leis
+      - normativas
+  - intent: positions_and_occupants
+    examples: |
+      - cargos e ocupantes
+      - cargos
+      - ocupantes
+      - posições
+  - intent: professional_profile
+    examples: |
+      - perfil profissional
+      - profissionais
+      - perfis
+      - profissionais necessários
+  - intent: opening_hours
+    examples: |
+      - horário de funcionamento
+      - horário
+      - funcionamento
+      - expediente
+  - intent: normative_acts
+    examples: |
+      - atos normativos
+      - normativos
+      - atos
+      - legislação normativa
+  - intent: programs_projects
+    examples: |
+      - ações
+      - obras
+      - atividades
+      - programas e projetos
+      - projetos
+      - programa
+      - projeto
+  - intent: services
+    examples: |
+      - carta de serviço
+      - carta de serviços
+      - serviços
+      - serviço
+      - atendimentos
+      - atendimento
+  - intent: financial_resources
+    examples: |
+      - concessões
+      - renúncias
+      - receitas
+      - recursos financeiros
+      - orçamento
+      - finanças
+      - financeiro
+  - intent: governance
+    examples: |
+      - governança
+      - governança corporativa
+      - governança pública
+      - governança institucional
+  - intent: ombudsman
+    examples: |
+      - ouvidoria
+      - canal de ouvidoria
+      - atendimento ao cidadão
+      - reclamações
+      - sugestões
+  - intent: audiences_and_public_consultations
+    examples: |
+      - audiências e consultas públicas
+      - audiências
+      - consultas públicas
+      - participação cidadã
+  - intent: councils_and_collegiate_bodies
+    examples: |
+      - conselhos e colegiados
+      - conselhos
+      - colegiados
+      - comitês
+  - intent: conferences
+    examples: |
+      - conferências
+      - eventos
+      - seminários
+      - congressos
+  - intent: public_calls
+    examples: |
+      - editais de chamamento público
+      - editais
+      - chamamento público
+      - chamadas públicas
+  - intent: other_actions
+    examples: |
+      - outras ações
+      - ações diversas
+      - iniciativas
+      - projetos especiais
